@@ -1,16 +1,34 @@
+:root {
+     --color: #3399cc;
+}
+
 body {
      font: 1rem/1.5 'Poppins', Helvetica, Arial, Sans-serif;
      background-color: #fff;
 }
+/* button */
+.btn {
+     border: 1px solid #fff;
+     padding: 10px 25px;
+     background: transparent;
+     display: inline-block;
+     text-transform: capitalize;
+}
 
 header {
-    background-color: #3399cc;
+    background-color: var(--color);
     color: #fff;
+    height: 100vh;
+    display: grid;
+    overflow: hidden;
+
 }
 
 header a {
    color: #fff;
 }
+
+
 /* navigation */
 .navigation {
    display: grid;
@@ -26,13 +44,14 @@ header a {
     gap: 10px;
 }
 
+
 /* hero */
 .hero {
     display: flex;
     flex-direction: column; 
-    height: 100vh;
-    justify-content: center;
     align-items: center;
+/*     border: 1px solid black; */
+    justify-content: center;
 }
 
 .title-website {
@@ -44,4 +63,84 @@ header a {
 .hero p {
     margin-top: -15px;
     margin-bottom: 20px;
+}
+
+section {
+     height: 100vh;
+/*      font-weight: 500; */
+}
+
+
+/* about */
+.about {
+      display: flex;
+      justify-content: center;
+      filter: grayscale(1);
+      transition: filter .5s;
+}
+h2 span {
+      color: var(--color);
+}
+.about:hover {
+   filter: grayscale(0);
+}
+.about-content {
+       width: 500px;
+       align-self: center;
+}
+.about-content h2 {
+      font-weight: 500;
+      color: inherit;
+}
+.about-banner {
+     display: flex;
+     justify-content: center;
+/*      border: 1px solid black; */
+     width: 400px;
+     align-self: center;
+}
+.about-banner img {
+      width: 80%;
+}
+
+
+.tech-stack {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+}
+.tech-stack h4 {
+   font-weight: 500;
+}
+.tech-stack img {
+}
+
+
+/* porfolio */
+.portfolio{
+     display: flex;
+     justify-content: center;
+     flex-direction: row-reverse;
+}
+.portfolio-content {
+     width: 400px;
+     align-self: center;
+}
+.portfolio-cards {
+   width: 500px;
+   align-self: center;
+   display: flex;
+   flex-wrap: wrap;
+}
+.portfolio h2 {
+      font-weight: 500;
+}
+.portfolio-cards .card {
+      padding: .5rem;
+      width: 45%;
+      border: 1px solid black;
+}
+.card p:nth-child(3) {
+      margin-top: 5px;
+      margin-bottom: 3px;
 }
