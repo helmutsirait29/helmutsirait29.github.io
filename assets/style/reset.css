@@ -1,10 +1,7 @@
 *, *::before, *::after {
    box-sizing: border-box;
-}
-
-* {
-   margin: 0;
-   padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -22,3 +19,4 @@ img, video, svg, canvas, picture {
     vertical-align: middle;
     background-repeat: no-repeat;
 }
+
