@@ -20,3 +20,11 @@ img, video, svg, canvas, picture {
     background-repeat: no-repeat;
 }
 
+input,
+button,
+select,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
