@@ -50,7 +50,7 @@ const body = document.querySelector('body');
 hamBtn.addEventListener('click', function() {
        this.classList.toggle('active');
        menu.classList.toggle('active');
-       body.classList.add('active');
+       body.classList.toggle('active');
 });
 
 for( let i = 0; i < navLink.length; i++ ){
