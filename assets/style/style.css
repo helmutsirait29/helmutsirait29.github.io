@@ -19,7 +19,7 @@ body.active {
 }
 /* button */
 .btn {
-    border: 1px solid #fff;
+    border: 1px solid #f5f4f4;
 /*     padding: 10px 25px; */
     letter-spacing: 0.5px;
 /*     max-width: max-content; */
@@ -263,7 +263,7 @@ body.active {
 }
 /* header */
 header {
-    border-image: linear-gradient(var(--color) 30%, #f5f4f4) 0 fill;
+    border-image: linear-gradient(var(--color) 55%, #f5f4f4) 0 fill;
     color: #fff;
     min-height: 100vh;
     height: auto;
@@ -321,7 +321,7 @@ header a {
 }
 
 .custom-shape-divider-top-1708807505 .shape-fill {
-    fill: white;
+    fill: #f5f4f4;
 }
 
 .menu li a {
@@ -340,13 +340,19 @@ header a {
     text-transform: capitalize;
     font-weight: 300;
     font-size: clamp(3.5rem, 12vw, 15rem);
+    text-shadow: 6px 6px #3399cc;
+}
+
+.stroke {
+  color: #f5f4f4;
+  text-shadow: -2px 0 #3399cc, 0 -2px #3399cc, 2px 0 #3399cc, 0 2px #3399cc, 2px 2px #3399cc, -2px -2px #3399cc, -2px 2px #3399cc, 2px -2px #3399cc, 6px 6px #f5f4f4;
 }
 
 .hero p {
     /*     border: 1px solid black; */
     margin-top: -15px;
     margin-bottom: 20px;
-    font-size: clamp(.1rem, 1.1vw, 1rem);
+    font-size: clamp(.9rem, 1vw, .2rem);
 }
 
 section {
@@ -597,6 +603,12 @@ textarea.input-field {
 }
 
 
+
+
+
+
+
+
 /* Responsive Screen BreakPoints */
 /* Mobile screen ( Potrait and Landscape ) */
 @media (width <=767px) {
@@ -606,6 +618,15 @@ textarea.input-field {
     }
     .navigation {
         padding: 0 .5rem;
+    }
+
+    .hero {
+          gap: 1rem;
+    }
+    .hero p {
+          font-size: 1rem;
+          width: 70%;
+          text-align: center;
     }
     .hamburger-btn {
         display: block;
@@ -655,22 +676,25 @@ textarea.input-field {
         overflow: hidden;
         flex-direction: column;
         padding: 2rem 0;
-        gap: 5px;
-        /* border: 1px solid black;       */
+        gap: 1rem;
+
     }
     .portfolio-cards {
         gap: 10px;
     }
     .portfolio-content {
         width: 80%;
-        padding: 1rem;
         text-align: left;
+         padding: 0;
     }
     .portfolio-cards {
         width: 80%;
-        padding: 1rem;
+        padding: 0 2.5rem;
+/*         border: 1px solid black; */
+        
     }
     .portfolio-cards .card {
+        margin-left: -38px;
         width: 100%;
     }
     /* gallery */
@@ -741,7 +765,6 @@ textarea.input-field {
     /*   about   */
     .about {
         padding: 0 2.5rem;
-        border: 1px solid black;
     }
     .about-content {
         /*       border: 1px solid black; */
@@ -750,6 +773,27 @@ textarea.input-field {
         /*      border: 1px solid black; */
         justify-content: end;
     }
+  
+.portfolio {
+      padding: 0 2.5rem;
+      border: 1px solid black;
+      flex-direction: column;
+}
+
+.portfolio-content {
+      border: 1px solid black;
+      align-self: self-start;
+      text-align: left;
+}
+
+.portfolio-cards {
+     border: 1px solid black;
+     align-self: self-start;
+     flex-wrap: nowrap;
+     width: 100%;
+}
+
+
 }
 
 /* Laptop screen ( Potrait and Landscape ) */
