@@ -8,9 +8,9 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
 }
-.brand img{
-   filter: drop-shadow(0 0 3px rgba(51, 153, 204, .6));
-/*      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+
+.brand img {
+    filter: drop-shadow(0 0 3px rgba(51, 153, 204, .6));
     width: 15%;
 }
 
@@ -20,9 +20,7 @@ body.active {
 /* button */
 .btn {
     border: 1px solid #f5f4f4;
-/*     padding: 10px 25px; */
     letter-spacing: 0.5px;
-/*     max-width: max-content; */
     background: transparent;
     text-transform: capitalize;
     display: inline-block;
@@ -36,141 +34,219 @@ body.active {
 
 .btn::before,
 .btn::after {
- position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #fff;
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
 .btn::before,
 .btn::after {
- position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 
 .btn::before {
-  height: 0%;
-  width: 2px;
+    height: 0%;
+    width: 2px;
 }
 .btn::after {
-  width: 0%;
-  height: 2px;
+    width: 0%;
+    height: 2px;
 }
 .btn:hover::before {
-  height: 100%;
+    height: 100%;
 }
 .btn:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .btn span {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      height: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 
 .btn span::before,
 .btn span::after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    transition: all 0.3s ease;
 }
 .btn span::before {
-  width: 2px;
-  height: 0%;
+    width: 2px;
+    height: 0%;
 }
 .btn span::after {
-  width: 0%;
-  height: 2px;
+    width: 0%;
+    height: 2px;
 }
 .btn span:hover::before {
-  height: 100%;
+    height: 100%;
 }
 .btn span:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
+
+/* btn-portfolio */
+.btn-portfolio {
+       border: 1px solid var(--color);
+        width: 100px;
+}
+
+.btn-portfolio::before,
+.btn-portfolio::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: var(--color);
+    transition: all 0.3s ease;
+}
+
+.btn-portfolio::before,
+.btn-portfolio::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: var(--color);
+    transition: all 0.3s ease;
+}
+
+.btn-portfolio::before {
+    height: 0%;
+    width: 2px;
+}
+.btn-portfolio::after {
+    width: 0%;
+    height: 2px;
+}
+.btn-portfolio:hover::before {
+    height: 100%;
+}
+.btn-portfolio:hover::after {
+    width: 100%;
+}
+
+.btn-portfolio span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.btn-portfolio span::before,
+.btn-portfolio span::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: var(--color);
+    transition: all 0.3s ease;
+}
+.btn-portfolio span::before {
+    width: 2px;
+    height: 0%;
+}
+.btn-portfolio span::after {
+    width: 0%;
+    height: 2px;
+}
+.btn-portfolio span:hover::before {
+    height: 100%;
+}
+.btn-portfolio span:hover::after {
+    width: 100%;
+}
+.button-code a {
+
+}
+
+
+/* btn-send */
 .btn-send {
     border: 1px solid black;
     width: 100px;
 }
-
 .btn-send::before,
 .btn-send::after {
- position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #000;
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #000;
+    transition: all 0.3s ease;
 }
 
 .btn-send::before,
 .btn-send::after {
- position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #000;
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 0.3s ease;
 }
 
 .btn-send::before {
-  height: 0%;
-  width: 2px;
+    height: 0%;
+    width: 2px;
 }
 .btn-send::after {
-  width: 0%;
-  height: 2px;
+    width: 0%;
+    height: 2px;
 }
 .btn-send:hover::before {
-  height: 100%;
+    height: 100%;
 }
 .btn-send:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .btn-send span {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      height: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 
 .btn-send span::before,
 .btn-send span::after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #000;
-  transition: all 0.3s ease;
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 0.3s ease;
 }
 .btn-send span::before {
-  width: 2px;
-  height: 0%;
+    width: 2px;
+    height: 0%;
 }
 .btn-send span::after {
-  width: 0%;
-  height: 2px;
+    width: 0%;
+    height: 2px;
 }
 .btn-send span:hover::before {
-  height: 100%;
+    height: 100%;
 }
 .btn-send span:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 
@@ -179,7 +255,7 @@ body.active {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 15px;
     border: 3px solid var(--color);
     border-radius: 50%;
     padding: .125rem;
@@ -263,7 +339,7 @@ body.active {
 }
 /* header */
 header {
-    border-image: linear-gradient(var(--color) 55%, #f5f4f4) 0 fill;
+    border-image: linear-gradient(var(--color) 50%, #f5f4f4) 0 fill;
     color: #fff;
     min-height: 100vh;
     height: auto;
@@ -274,13 +350,8 @@ header {
 header a {
     color: #fff;
 }
-/* navigation */
+   /* navigation */
 .navigation {
-    /*    border: 1px solid white;  */
-    /* display: grid;
-   grid-auto-flow: column;
-   grid-auto-columns: max-content;
-   gap: 10px; */
     padding: .5rem 1rem;
     display: flex;
     justify-content: space-between;
@@ -300,10 +371,57 @@ header a {
 
 }
 
-/* waves */
+.menu li a {
+    color: var(--color);
+    letter-spacing: 0.04rem;
+    text-transform: capitalize;
+    padding: 2px 0;
+    position: relative;
+/*     border: 1px solid black; */    
+}
+.menu li a:hover {
+     color: var(--color); 
+} 
+
+.menu li a::before, .menu li a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+     height: 2px;
+     bottom: -2px;
+     background: var(--color);
+}
+
+.menu li a::before {
+     left: 0;
+}
+
+.menu li a::after {
+      right: 0;
+      background: var(--color);
+      transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu li a:hover::before {
+    background: var(--color);
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu li a:hover::after {
+        background: transparent;
+        width: 100%;
+       transition: 0s;
+}
+
+.menu li {
+
+}
+
+  /* waves */
 .custom-shape-divider-top-1708807505 {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -324,17 +442,16 @@ header a {
     fill: #f5f4f4;
 }
 
-.menu li a {
-     color: var(--color);
-}
-
 /* hero */
 .hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+/*     position: relative; */
 }
+
+
 
 .title-website {
     text-transform: capitalize;
@@ -344,12 +461,13 @@ header a {
 }
 
 .stroke {
-  color: #f5f4f4;
-  text-shadow: -2px 0 #3399cc, 0 -2px #3399cc, 2px 0 #3399cc, 0 2px #3399cc, 2px 2px #3399cc, -2px -2px #3399cc, -2px 2px #3399cc, 2px -2px #3399cc, 6px 6px #f5f4f4;
+    color: #f5f4f4;
+/*     text-shadow: 0 0 #3399cc, 0 0 #3399cc, 0 0 #3399cc, 0 0 #3399cc, 0 0 #3399cc, 1px 1px #3399cc, 0 0 #3399cc, 2px -2px #3399cc, 6px 6px #f5f4f4; */
+   text-shadow: 2px 2px 2px rgba(206,89,55,0);
+
 }
 
 .hero p {
-    /*     border: 1px solid black; */
     margin-top: -15px;
     margin-bottom: 20px;
     font-size: clamp(.9rem, 1vw, .2rem);
@@ -357,9 +475,7 @@ header a {
 
 section {
     height: 100vh;
-    /*      font-weight: 500; */
 }
-
 
 /* about */
 .about {
@@ -394,7 +510,9 @@ h2 span {
 .about-banner img {
     width: 80%;
 }
-
+.about-content {
+    text-wrap: balance;
+}
 
 .tech-stack {
     display: flex;
@@ -438,33 +556,33 @@ h2 span {
     position: relative;
 }
 .portfolio-cards .card::before {
-     content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: var(--color);
-  margin-top: -4px;
-  margin-left: -4px;
+    border-bottom-left-radius: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: var(--color);
+    margin-top: -4px;
+    margin-left: -4px;
 }
 
 .portfolio-cards .card::after {
     content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-      border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  height: 100px;
-  width: 100px;
-  background-color: var(--color);
-  margin-bottom: -4px;
-  margin-right: -4px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100px;
+    width: 100px;
+    background-color: var(--color);
+    margin-bottom: -4px;
+    margin-right: -4px;
 }
 .card p:nth-child(3) {
     margin-top: 5px;
@@ -592,9 +710,6 @@ textarea.input-field {
     resize: vertical;
 }
 
-
-
-
 /* footer */
 .footer {
     padding: 1rem;
@@ -621,12 +736,13 @@ textarea.input-field {
     }
 
     .hero {
-          gap: 1rem;
+        gap: 1rem;
     }
     .hero p {
-          font-size: 1rem;
-          width: 70%;
-          text-align: center;
+        font-size: 1rem;
+        width: 70%;
+        text-align: center;
+        text-wrap: balance;
     }
     .hamburger-btn {
         display: block;
@@ -643,7 +759,7 @@ textarea.input-field {
         height: 100vh;
         justify-content: center;
         align-content: space-around;
-        background-color: #9ac0fa;
+        background-color: #f5f4f4;
         transition: 0.3s;
     }
 
@@ -661,9 +777,9 @@ textarea.input-field {
         flex-direction: column;
     }
 
-     .tech-stack .tech-list {
-          display: flex;
-     }
+    .tech-stack .tech-list {
+        display: flex;
+    }
     .about-banner {
         width: 80%;
     }
@@ -680,18 +796,18 @@ textarea.input-field {
 
     }
     .portfolio-cards {
-        gap: 10px;
+        gap: 1rem;
     }
     .portfolio-content {
         width: 80%;
         text-align: left;
-         padding: 0;
+        padding: 0;
     }
     .portfolio-cards {
         width: 80%;
         padding: 0 2.5rem;
-/*         border: 1px solid black; */
-        
+        /*         border: 1px solid black; */
+
     }
     .portfolio-cards .card {
         margin-left: -38px;
@@ -733,7 +849,7 @@ textarea.input-field {
         padding: 2rem 0;
     }
     .contact-content {
-       text-align: left;  
+        text-align: left;
     }
 
     .contact-content,
@@ -755,47 +871,55 @@ textarea.input-field {
     }
 
     .back-to-top {
-          right: 2px;
+        right: 15px;
     }
 }
 
 /* Tablet screen ( Potrait and Landscape ) */
 @media (768px <=width <=1023px) {
-  
     /*   about   */
     .about {
         padding: 0 2.5rem;
     }
-    .about-content {
-        /*       border: 1px solid black; */
-    }
     .about-banner {
-        /*      border: 1px solid black; */
         justify-content: end;
     }
-  
-.portfolio {
-      padding: 0 2.5rem;
-      border: 1px solid black;
-      flex-direction: column;
+    
+    .hero p {
+         width: 65%;
+         text-align: center; 
+    }
+    .portfolio, .gallery, .contact {
+        padding: 0 4rem;
+
+    }
+   /*   portfolio    */
+    .portfolio {
+        gap: 1rem;
+    }
+    .portfolio-cards {
+        width: 100%;
+        gap: 1.5rem;
+    }
+    .portfolio-cards .card {
+        width: 80%;
+    }
+
+    /* gallery */
+    .gallery {
+        justify-content: space-around;
+    }
+    .gallery-banner {
+        width: 50%;
+    }
+    .gallery-content {
+        width: 30ch;
+    }
+    
+    /* contact */
+
+
 }
-
-.portfolio-content {
-      border: 1px solid black;
-      align-self: self-start;
-      text-align: left;
-}
-
-.portfolio-cards {
-     border: 1px solid black;
-     align-self: self-start;
-     flex-wrap: nowrap;
-     width: 100%;
-}
-
-
-}
-
 /* Laptop screen ( Potrait and Landscape ) */
 @media (1024px <=width <=1439px) {}
 
