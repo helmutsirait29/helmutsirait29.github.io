@@ -1,5 +1,6 @@
 Personal website portfolio. Designed with ♥️ and creativity by Helmut Sirait 
 
+tech stack : HTML, CSS, Javascript
  
 
 Credits:
