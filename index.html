@@ -39,11 +39,7 @@
                 </svg>
             </nav>
             <section class="hero">
-              
-                  <h2 class="title-website stroke">helmut sirait</h2>
-                   
-           
-               
+                <h2 class="title-website">helmut sirait</h2>   
                 <p>Design is not just what it looks like and feels like. Design is how it works." -- Steve Jobs, co-founder of Apple, Inc</p>
                 <a href="" class="btn"><span>resume</span></a>
             </section>
@@ -53,7 +49,7 @@
             <section class="about" id="about">
                 <div class="about-content">
                     <h2>About <span>Me</span></h2>
-                    <p>Hi, I'm Helmut Sirait, Front-End and Web Design from North Sumatera, Indonesia
+                    <p>Hai👋, I'm Helmut Sirait, Front-End and Web Design from North Sumatera, Indonesia
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, itaque cupiditate provident culpa, odit recusandae facilis temporibus iure consequuntur asperiores. Cum sequi corrupti pariatur nemo repudiandae, dolor quasi, eveniet autem.</p>
                     <div class="tech-stack">
                         <h4>Tech Stack</h4>
@@ -65,6 +61,7 @@
                             <img src="assets/images/tailwindcss.svg" alt="JavaScript">
                         </div>
                     </div>
+
                 </div>
                 <div class="about-banner">
                     <img src="assets/images/pp.png" alt="a man with hoddie">
@@ -145,13 +142,13 @@
                     <div class="form-wrapper">
                         <label for="name" class="form-label">Name</label>
                         <div class="input-wrapper">
-                            <input type="text" id="name" required placeholder="your name" class="input-field">
+                            <input type="text" id="name" required placeholder="your name" class="input-field" autocomplete="off" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10">
                         </div>
                     </div>
                     <div class="form-wrapper">
                         <label for="email" class="form-label">email</label>
                         <div class="input-wrapper">
-                            <input type="email" id="email" required placeholder="your email" class="input-field">
+                            <input type="email" id="email" required placeholder="your email" class="input-field" autocomplete="off" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
                         </div>
                     </div>
                     <div class="form-wrapper">
@@ -160,7 +157,7 @@
                             <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-send"><span>Send</span></button>
+                    <button type="submit" class="btn btn-portfolio"><span>Send</span></button>
                 </form>
             </section>
         </main>
