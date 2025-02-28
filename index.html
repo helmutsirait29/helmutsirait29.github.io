@@ -138,23 +138,23 @@
                     <h2>Conta<span>ct</span></h2>
                     <p>Interested to work together ? Let's talk</p>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mwpvgvke" method="POST">
                     <div class="form-wrapper">
                         <label for="name" class="form-label">Name</label>
                         <div class="input-wrapper">
-                            <input type="text" id="name" required placeholder="your name" class="input-field" autocomplete="off" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10">
+                            <input type="text" id="name" required placeholder="your name" class="input-field" autocomplete="off" pattern="[a-zA-Z0-9]+" minlength="4" maxlength="10" name="name">
                         </div>
                     </div>
                     <div class="form-wrapper">
                         <label for="email" class="form-label">email</label>
                         <div class="input-wrapper">
-                            <input type="email" id="email" required placeholder="your email" class="input-field" autocomplete="off" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
+                            <input type="email" id="email" required placeholder="your email" class="input-field" autocomplete="off" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" name="email">
                         </div>
                     </div>
                     <div class="form-wrapper">
                         <label for="message" class="form-label">Message</label>
                         <div class="input-wrapper">
-                            <textarea name="message" id="message" required placeholder="Write message..." class="input-field"></textarea>
+                            <textarea name="message" id="message" required placeholder="Write message..." class="input-field" name="message" autocomplete="off"></textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-portfolio"><span>Send</span></button>
